@@ -30,12 +30,12 @@ There are layers upon layers of nested functions within the game of baseball. Yo
 Using VSCode and Command Line:
 
 
-1. Fork the repo
-2. Clone your forked version of the repo
-3. cd into your repo and create a branch with your first and last name
-4. open the terminal in your vs code and type `npm install`
-5. next type `npm run test` in your terminal
-6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
+1. Fork the repo✔️
+2. Clone your forked version of the repo✔️
+3. cd into your repo and create a branch with your first and last name✔️
+4. open the terminal in your vs code and type `npm install`✔️
+5. next type `npm run test` in your terminal✔️
+6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit✔️
 
 
 ### Task 2a - MVP code
@@ -59,6 +59,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+    - Scope access of Global and Local variables.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,8 +81,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  - name and newRoll. name can be accessed anywhere within the scope but newRoll only accessible within the local scope.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  - Dan will always be the same, but newRoll will change.
 c. What is the lexical scope of `newRoll`? 
+  - newRoll is a local scope which can be accesible within return function.
 
 
 ### Task 3 - Stretch Goals
