@@ -28,11 +28,12 @@ console.log(processFirstItem(['foo', 'bar'], function (str) { return str + str }
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-    counter1's count variable is only accessible within counterMaker(). Counter2's is Global.
+    - counter1's count variable is only accessible within counterMaker(). Counter2's is Global.
   2. Which of the two uses a closure? How can you tell?
-    counter1, because count variable is contained within counterMaker().
+    - counter1, because count variable is contained within counterMaker().
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     - Most likely counter1 is much preferable for most of the time. Counter2 will be used if count variable is needed for Global access.
 */
 
 // counter1 code
@@ -150,13 +151,13 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(inningScore, inningCount, inningNum) {
+function scoreboard(inningScoreCb, inningCountCb, inningNum) {
   /* CODE HERE */
   let scores = [];
   let awScore = 0;
   let hoScore = 0;
   for (let i = 1; i <= inningNum; i++) {
-    const { Home, Away } = inningScore(inningCount);
+    const { Home, Away } = inningScoreCb(inningCountCb);
     scores.push(`Inning ${i}: Away ${Away} - Home ${Home}`);
     awScore += Away;
     hoScore += Home;
